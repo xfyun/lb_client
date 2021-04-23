@@ -1,7 +1,7 @@
 package lb_client
 
 import (
-	"pb/lbClientPb"
+	"git.iflytek.com/sqjian/lbclientpb"
 
 	"github.com/golang/protobuf/proto"
 )
