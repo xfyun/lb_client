@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"git.iflytek.com/sqjian/redisgo"
+	"git.iflytek.com/AIaaS/redisgo"
 	"github.com/cihub/seelog"
 	"github.com/samuel/go-zookeeper/zk"
 )
