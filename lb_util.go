@@ -114,8 +114,13 @@ func (lu *LbUtil) initRedis(redisHost, redisPasswd string, maxActive, maxIdle, d
 	}
 
 	//初始化redis相关配置
-	lu.RedisInst, err = redisgo.NewRedisInst(redisHost, redisPasswd, maxIdle, maxActive,
-		db, idleTimeOut)
+	lu.RedisInst, err = redisgo.NewRedisInst(
+		redisgo.WithRedisHost(redisHost),
+		redisgo.WithRedisPwd(redisPasswd),
+		redisgo.WithMaxIdle(maxIdle),
+		redisgo.WithDb(db),
+		redisgo.WithIdleTimeout(idleTimeOut),
+	)
 	if err != nil {
 		return
 	}
