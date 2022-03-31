@@ -1,4 +1,4 @@
-module git.iflytek.com/AIaaS/lb_client
+module github.com/xfyun/lb_client
 
 go 1.16
 
