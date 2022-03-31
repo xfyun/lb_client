@@ -1,9 +1,8 @@
 package lb_client
 
 import (
-	"git.iflytek.com/AIaaS/lbclientpb"
-
 	"github.com/golang/protobuf/proto"
+	lbClientPb "github.com/xfyun/lbClientPb"
 )
 
 //封装注册的proto信息
